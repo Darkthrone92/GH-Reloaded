@@ -2,7 +2,7 @@
 
 int	ft_putchar (char h)
 {
-	return write (1, &h, 1);
+	write (1, &h, 1);
 }
 
 void	ft_putstr(char *str)
