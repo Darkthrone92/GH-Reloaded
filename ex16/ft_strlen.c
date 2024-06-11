@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xbatiste <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/07 13:03:37 by xbatiste          #+#    #+#             */
-/*   Updated: 2024/06/11 11:47:13 by xbatiste         ###   ########.fr       */
+/*   Created: 2024/06/11 11:01:20 by xbatiste          #+#    #+#             */
+/*   Updated: 2024/06/11 11:57:10 by xbatiste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-void	ft_is_negative(int n)
+int	ft_strlen(char *str)
 {
-	if (n >= 0)
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		write(1, "P", 1);
+		i++;
 	}
-	else
-	{
-		write(1, "N", 1);
-	}
+	return (i);
 }
 
 /*int	main(void)
 {
-	int	n;
+	char	*text;
 
-	n = -5;
-	ft_is_negative(n);
+	text = "Esto es una string";
+	printf("Longitud de la string: %d\n", ft_strlen(text));
 	return (0);
 }*/
