@@ -6,11 +6,13 @@
 /*   By: xbatiste <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 10:41:22 by xbatiste          #+#    #+#             */
-/*   Updated: 2024/06/12 10:55:54 by xbatiste         ###   ########.fr       */
+/*   Updated: 2024/06/17 18:24:27 by xbatiste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <unistd.h>
+
+int	ft_putchar(char c);
 
 int	main(int argc, char *argv[])
 {

@@ -6,7 +6,7 @@
 /*   By: xbatiste <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 11:46:02 by xbatiste          #+#    #+#             */
-/*   Updated: 2024/06/10 12:44:25 by xbatiste         ###   ########.fr       */
+/*   Updated: 2024/06/17 18:55:18 by xbatiste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@ int	ft_iterative_factorial(int nb)
 {
 	int	fact;
 
-	fact = 1;
 	if (nb < 0)
 	{
 		return (0);
 	}
+	fact = 1;
 	while (nb > 0)
 	{
 		fact = fact * nb;
